@@ -1,7 +1,7 @@
 import https from "https";
 
-function getRequest() {
-  const url = 'https://api.agify.io/?name=raj';
+function getRequest(name) {
+  const url = 'https://api.agify.io/?name='+name;
 
   return new Promise((resolve, reject) => {
     const req = https.get(url, res => {
@@ -28,11 +28,11 @@ function getRequest() {
 
 export const handler = async(event) => {
     try {
-    const result = await getRequest();
+    const result = await getRequest(event.name);
     return {
       statusCode: 200,
       headers: {'Content-Type': 'application/json'},
-      body: "Age is: "+result.age
+      body: "Age of "+event.name +" is: "+result.age
     };
   } catch (error) {
     console.log('Error is: 👉️', error);

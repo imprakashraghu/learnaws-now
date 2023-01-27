@@ -1,0 +1,9 @@
+# First Server
+
+cd /var/www/html/
+sudo git clone https://github.com/imprakashraghu/learn-aws-ec2-1.git .
+
+# Second Server
+
+cd /var/www/html/
+sudo git clone https://github.com/imprakashraghu/learn-aws-ec2-2.git .

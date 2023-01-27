@@ -1,0 +1,8 @@
+
+# SSH into Server and proceed with this command to install NODEJS
+
+nvm install 14.10.0
+
+# Clone the project
+
+git clone https://github.com/imprakashraghu/opinion-app-react.git .
