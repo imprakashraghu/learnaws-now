@@ -7,3 +7,9 @@ sudo git clone https://github.com/imprakashraghu/learn-aws-ec2-1.git .
 
 cd /var/www/html/
 sudo git clone https://github.com/imprakashraghu/learn-aws-ec2-2.git .
+
+
+# Create a Stress
+sudo amazon-linux-extras install epel -y
+sudo yum install stress -y
+sudo stress --cpu 8 --vm-bytes $(awk '/MemAvailable/{printf "%d\n", $2 * 0.9;}' < /proc/meminfo)k --vm-keep -m 1
