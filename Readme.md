@@ -1,6 +1,8 @@
 ## Welcome to AWS Cloud Computing - Learn in a Day
 ---
 
+https://github.com/imprakashraghu/learnaws-now
+
 ### Amazon EC2
 - Create a EC2 Instance with userdata script.
 - Create another EC2 Instance with userdata script.
